@@ -38,7 +38,6 @@ drugRiskScore_fun <- function(lnc_exp,miR_exp,PCG_exp,clinical,expvali_ceRNA_dat
   colnames(PCG_exp_tumor) <- substr(colnames(PCG_exp_tumor),1,12) #1113
   length(unique(colnames(PCG_exp_tumor)))#1095
   
-
   PCG_exp_tumor_uni <-  PCG_exp_tumor[,which(colName$Freq==1)]#19938  1082
   rep_colname <- c()
   for(i in 1:dim(colName)[1]){
@@ -104,4 +103,5 @@ drugRiskScore_fun <- function(lnc_exp,miR_exp,PCG_exp,clinical,expvali_ceRNA_dat
   out <- list(coxtable=coxtable,clin_riskScore=clin_riskScore,clin_HighLow=clin_HighLow)
   return(out)
 }
+
 
