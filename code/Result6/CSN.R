@@ -5,6 +5,7 @@ CSN<-function(data){
   n1=nrow(data)
   n2=ncol(data)
   c=1:n2
+  
   upper<-matrix(0,n1,n2,dimnames = list(row.names(data),
                                         colnames(data)))
   lower<-matrix(0,n1,n2,dimnames = list(row.names(data),
