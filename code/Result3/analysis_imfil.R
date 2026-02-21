@@ -16,7 +16,6 @@ RNA_imcell_scc_fun <- function(imlnc_canceri_exp,IRG_canceri_exp,immiR_canceri_e
 
   scc_lnc_imcell_R <- scc_lnc_imcell_R[, colSums(is.na(scc_lnc_imcell_R)) != nrow(scc_lnc_imcell_R)]
 
-
   lnc_imcell_data <- data.frame(lncRNA="",imcell="",scc_r="")
   temp_data <-data.frame()
   temp_row_data <- data.frame()
@@ -152,5 +151,6 @@ RNA_imcell_scc_fun <- function(imlnc_canceri_exp,IRG_canceri_exp,immiR_canceri_e
   out <- list(lnc_imcell_data=lnc_imcell_data,miR_imcell_data=miR_imcell_data,IRG_imcell_data=IRG_imcell_data)
   return(out)
 }
+
 
 
