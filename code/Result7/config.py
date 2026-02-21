@@ -23,7 +23,7 @@ XGB_PARAMS = {
 CV_FOLDS = 5 
 TEST_SIZE = 0.2 
 STRATIFIED = True 
- 
+  
 # Feature processing 
 FEATURE_TYPES = ['lnc_expr', 'gene_expr', 'comp_index', 'corr', 'expr_diff', 'interaction']
 VARIANCE_THRESHOLD = 0.01 
