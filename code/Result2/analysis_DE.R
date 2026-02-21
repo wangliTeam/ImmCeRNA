@@ -90,7 +90,6 @@ summarySE <- function(data=NULL, measurevar, groupvars=NULL, na.rm=FALSE,
     return(lnc_res_all)
   }
   
-  
   DE_ce_fun <- function(lnc_res_sig,miR_res_sig,gene_res_sig,expvali_ceRNA_data){
     colnames(lnc_res_sig) <- c("lnc","p.value","fdr","ratio","test_type")
     colnames(miR_res_sig) <- c("miR","p.value","fdr","ratio","test_type")
@@ -111,4 +110,5 @@ summarySE <- function(data=NULL, measurevar, groupvars=NULL, na.rm=FALSE,
                                                       gene %in% gene_res_sig$gene ~ "gene_sig"))  
     return(DE_ceRNA)
   }
+
   
