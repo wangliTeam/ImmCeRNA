@@ -18,7 +18,6 @@ survival_fun <- function(lnc_exp,miR_exp,PCG_exp,clinical,expvali_ceRNA_data,can
     lnc_exp_tumor_uni <- cbind(lnc_exp_tumor_uni,temp_sample)
   }
   colnames(lnc_exp_tumor_uni) <- c(colnames(lnc_exp_tumor[,which(colName$Freq==1)]),rep_colname)
-
   
   meta = clinical
   
@@ -87,4 +86,5 @@ survival_fun <- function(lnc_exp,miR_exp,PCG_exp,clinical,expvali_ceRNA_data,can
   out <- list(clin_riskScore=clin_riskScore,clin_HighLow=clin_HighLow)
   return(out)
 }
+
 
