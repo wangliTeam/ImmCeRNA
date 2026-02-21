@@ -36,6 +36,7 @@ library(survival)
 library(ggplot2)
 library(ggpubr)
 library(survminer)
+
 showtext_auto()
 
 cancer <- c("ACC","BLCA","BRCA","CESC","CHOL","COAD","DLBC","ESCA","HNSC","KICH",
@@ -302,6 +303,7 @@ for(c in 1:length(cancer)){
               "KIRC","KIRP","LAML","LGG","LIHC","LUAD","LUSC","MESO","OV","PAAD","PCPG",
               "PRAD","READ","SARC","SKCM","STAD","TGCT","THCA","THYM","UCEC","UCS","UVM")
 }
+
 
 
 
