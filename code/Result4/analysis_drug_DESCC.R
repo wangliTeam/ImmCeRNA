@@ -8,7 +8,7 @@ drug_DESPCC_fun <- function(cancer,sample_HighLow,sample_Riskscore,sample_drug_d
   ceRNA_names <- colnames(sample_HighLow)
   DE_drug_data <- data.frame()
 
-  
+
   for(i in 1:length(ceRNA_names)){
     sample_drug_data_temp <- cbind(group=sample_HighLow[rownames(sample_drug_data),ceRNA_names[i]],
                                    sample_drug_data)
@@ -44,4 +44,5 @@ drug_DESPCC_fun <- function(cancer,sample_HighLow,sample_Riskscore,sample_drug_d
 
   return(out)
 }
+
 
